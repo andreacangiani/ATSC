@@ -34,7 +34,9 @@ Students will acquire self-directed learning abilities, enabling them to stay cu
 
 # Required skills
 
-Former knowledge of programming fundamentals (syntax, data types, variables, control structures, functions) is required for this course.
+Prior knowledge of foundamentals about the numerical analysis of partial differential equations and in particular finite element method analysis.
+
+Knowledge of programming fundamentals (syntax, data types, variables, control structures, functions) is required for this course.
 
 Prior experience with a programming language, preferably C++.
 
