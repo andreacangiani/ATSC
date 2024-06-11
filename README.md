@@ -43,7 +43,7 @@ Prior experience with a programming language, preferably C++.
 ---
 
 # Course content
-Review of fundamentals of the Finite Element Method. A priori and a posteriori error estimates. Computational Mechanics. Fluid mechanics modelling. Functional analytic setting. Analysis of saddle-point problems.  Analysis of classical Finite Element Methods for the Stokes equations. The discontinuous Galerkin Finite Element Method. Theory and approximation of the Navier-Stokes problem. 
+Review of fundamentals of the Finite Element Method. A priori and a posteriori error estimates. Fluid mechanics modelling. Computational Mechanics. Functional analytic setting. Analysis of saddle-point problems.  Analysis of Finite Element Methods for the Stokes equations. The discontinuous Galerkin Finite Element Method. Theory and approximation of the Navier-Stokes problem. 
 
 Tools for Finite Element programming.  Data structures and mesh generation, numerical quadrature techniques. Assembling and storage. Direct and iterative solvers, preconditioning techniques. Numerical linear algebra packages. Solution of nonlinear systems.
 
@@ -81,7 +81,8 @@ For students who prefer to read books, the following references are recommended:
 
 1. Finite Element Methods for Navier-Stokes Equations, Vivette Giraut & Pierre-Arnaud Raviart, Springer, 1986 
 2. Mathematical Aspects of Discontinuous Galerkin Methods, Daniele Antonio Di Pietro & Alexandre Ern, Springer, 2012
-3. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
+3. Introduction to Numerical Methods for Variational Problems, Hans Petter Langtangen & Kent-Andre Mardal, Springer, 2019
+4. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
 
 These books provide in-depth coverage of the course material and can serve as valuable resources for further study.
 
