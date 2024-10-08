@@ -108,8 +108,8 @@ docker rm <name-of-the-container>
 
    project(test_project)
 
-   find_package(deal.II 9.5.0 REQUIRED
-       HINTS $ENV{mkDealiiPrefix} ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
+   find_package(deal.II 9.6.0 REQUIRED
+       HINTS ${DEAL_II_DIR} ../ ../../ $ENV{DEAL_II_DIR}
    )
    deal_ii_initialize_cached_variables()
 
