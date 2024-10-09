@@ -79,10 +79,12 @@ The instructors will provide support material and references throughout the cour
 
 For students who prefer to read books, the following references are recommended:
 
-1. Finite Element Methods for Navier-Stokes Equations, Vivette Giraut & Pierre-Arnaud Raviart, Springer, 1986 
-2. Mathematical Aspects of Discontinuous Galerkin Methods, Daniele Antonio Di Pietro & Alexandre Ern, Springer, 2012
-3. Introduction to Numerical Methods for Variational Problems, Hans Petter Langtangen & Kent-Andre Mardal, Springer, 2019
-4. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
+1. The Finite Element Method for Elliptic Problems, Philippe G. Ciarlet, SIAM, 2002
+2. Theory and Practice of Finite Elements, Alexandre Ern & Jean-Luc Guermond, Springer, 2004
+3. Finite Element Methods for Navier-Stokes Equations, Vivette Giraut & Pierre-Arnaud Raviart, Springer, 1986 
+4. Mathematical Aspects of Discontinuous Galerkin Methods, Daniele Antonio Di Pietro & Alexandre Ern, Springer, 2012
+5. Introduction to Numerical Methods for Variational Problems, Hans Petter Langtangen & Kent-Andre Mardal, Springer, 2019
+6. Programming - Principles and Practice Using C++, Bjarne Stroustrup, Addison-Wesley, May 2014 
 
 These books provide in-depth coverage of the course material and can serve as valuable resources for further study.
 
