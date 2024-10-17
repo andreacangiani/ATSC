@@ -8,7 +8,7 @@ _class: titlepage
 # Lab 03
 <br>
 
-## Setup of a FEM problem. deal.II step-3, step-4.
+## Setting up a FEM problem. deal.II step-3, step-4.
 <br>
 
 #### Advanced Topic in Scientific Computing - SISSA, UniTS, 2024-2025
