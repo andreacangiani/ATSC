@@ -8,7 +8,7 @@ _class: titlepage
 # Lab 03
 <br>
 
-## Setup of a FEM problem. deal.II step-3.
+## Setup of a FEM problem. deal.II step-3, step-4.
 <br>
 
 #### Advanced Topic in Scientific Computing - SISSA, UniTS, 2024-2025
@@ -38,7 +38,7 @@ void Step3::run()
 
 ---
 
-# Class definition: `Step3`
+# The Poisson equation solver class
 
 ```cpp
 class Step3 {
@@ -77,7 +77,7 @@ Step3::Step3()
 {}
 ```
 
-# `make_grid`
+# Creating the triangulation
 
 ```cpp
 void Step3::make_grid()
@@ -93,7 +93,7 @@ void Step3::make_grid()
 
 ---
 
-# `setup_system`
+# Setting up the system
 
 ```cpp
 void Step3::setup_system()
@@ -117,7 +117,7 @@ void Step3::setup_system()
 
 ---
 
-# `assemble_system` (1/2)
+# Assembling the linear system (1/2)
 
 ```cpp
 void Step3::assemble_system()
@@ -136,7 +136,7 @@ void Step3::assemble_system()
 
 ---
 
-# `assemble_system` (2/2)
+# Assembling the linear system (2/2)
 
 ```cpp
   for (const auto &cell : dof_handler.active_cell_iterators())
@@ -218,7 +218,7 @@ These boundary conditions ensure that the solution satisfies the prescribed valu
 
 ---
 
-# `solve`
+# Solving the linear system
 
 ```cpp
 void Step3::solve()
@@ -236,7 +236,7 @@ void Step3::solve()
 
 ---
 
-# `output_results`
+# Output results
 
 ```cpp
 void Step3::output_results() const
