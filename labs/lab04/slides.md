@@ -287,3 +287,11 @@ The key concepts in `step-6.cc` include:
 - **Hanging nodes**: These occur when the mesh has irregular refinements. The `AffineConstraints` class is used to ensure that the solution is continuous across these nodes.
 - **`AffineConstraints`**: This class handles both hanging nodes and other linear constraints, ensuring that the FEM solution is consistent across the mesh.
 - **System assembly**: Constraints are applied during the assembly of the system matrix to ensure that the solution respects the required boundary conditions and continuity requirements.
+
+---
+
+# Assignments
+
+1. Try with a constant diffusion coefficient $a$: what do you expect? What do you observe?
+2. Try with different preconditioners and compare the number of linear solver iterations and the computational time.
+3. Instead of refining the grid based on the Kelly error estimation, implement a *manual* refinement strategy based on geometric features (e.g., refine near the center of the domain). Compare the results (i.e., number of cells and degrees of freedom) with adaptive refinement.
