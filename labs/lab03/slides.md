@@ -124,12 +124,12 @@ void Step3::assemble_system()
 {
   QGauss<2> quadrature_formula(2);
   FEValues<2> fe_values(fe, quadrature_formula,
-                        update_values   | update_gradients |
+                        update_values | update_gradients |
                         update_quadrature_points | update_JxW_values);
 
   const unsigned int dofs_per_cell = fe.dofs_per_cell;
   FullMatrix<double> cell_matrix(dofs_per_cell, dofs_per_cell);
-  Vector<double> cell_rhs(dofs_per_cell);
+  Vector<double>     cell_rhs(dofs_per_cell);
 
   std::vector<types::global_dof_index> local_dof_indices(dofs_per_cell);
 ```
