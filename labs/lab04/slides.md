@@ -244,7 +244,7 @@ After assembling the system, we solve it using a direct solver.
 template <int dim>
 void Step6<dim>::solve()
 {
-  SparseDirectUMFPACK  solver;
+  SparseDirectUMFPACK solver;
   solver.solve(system_matrix, solution, system_rhs);
 
   constraints.distribute(solution);
@@ -293,5 +293,5 @@ The key concepts in `step-6.cc` include:
 # Assignments
 
 1. Try with a constant diffusion coefficient $a$: what do you expect? What do you observe?
-2. Try with different preconditioners and compare the number of linear solver iterations and the computational time.
+2. Try with different preconditioners applied to an iterative solver (for non-symmetric problems) and compare the number of linear solver iterations and the computational time.
 3. Instead of refining the grid based on the Kelly error estimation, implement a *manual* refinement strategy based on geometric features (e.g., refine near the center of the domain). Compare the results (i.e., number of cells and degrees of freedom) with adaptive refinement.
