@@ -15,7 +15,7 @@ _class: titlepage
 
 ###### Pasquale Claudio Africa
 
-###### 17 Oct 2024
+###### 18 Oct 2024
 
 ---
 
@@ -174,7 +174,7 @@ void Step6<dim>::setup_system()
   constraints.close();
 
   DynamicSparsityPattern dsp(dof_handler.n_dofs());
-  DoFTools::make_sparsity_pattern(dof_handler, dsp, constraints, /* keep_constrained_dofs = */ true);
+  DoFTools::make_sparsity_pattern(dof_handler, dsp, constraints, /* keep_constrained_dofs = */ false);
   sparsity_pattern.copy_from(dsp);
 
   system_matrix.reinit(sparsity_pattern);
