@@ -59,7 +59,7 @@ In this exercise, you will extend the problem in `step-6` by adding a convection
    
    Update the source code to include this convection vector in the matrix assembly.
 
-:warning: **Warning**: with convection terms, the resulting matrix is not symmetric anymore! Choose proper linear solver and preconditioners.
+   :warning: **Warning**: with convection terms, the resulting matrix is not symmetric anymore! Choose a proper linear solver and preconditioner.
 
 5. **Run the code and analyze the results**:
    Compile and run the modified problem. Visualize the numerical solution. In convection-dominated scenarios, you should observe oscillations or numerical instabilities in regions where convection dominates diffusion. This instability is due to the fact that the standard Galerkin method does not provide sufficient stability for convection-dominated problems.
@@ -73,6 +73,9 @@ In this exercise, you will extend the problem in `step-6` by adding a convection
 
 ## Bonus challenge
 Once you observe the instabilities, try implementing a simple stabilization technique, such as artificial diffusion or SUPG, as discussed in `step-9`, to improve the numerical stability of the solution. Compare the results with and without stabilization.
+
+## Convergence test
+Consider the exact problem defined in [`ad_exact_solution.pdf`](ad_exact_solution.pdf) over the domain $\Omega = (0, 1)^2$, for some $\varepsilon<\!\!\!< 1$. Compute the $L^2$ and $H^1$ errors and verify convergence estimates w.r.to the mesh size $h$.
 
 ---
 
