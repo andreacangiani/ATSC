@@ -67,7 +67,7 @@ void Step6<dim>::compute_residual_based_error(Vector<float> &error_per_cell)
 Following `step-14` (consider in particular the `integrate_over_regular_face` method), add face jump terms to the internal residual estimator:
 
 $$
-\eta_K = h_K \left(\int_K \left( f + \nabla \cdot (a \nabla u_h) \right)^2 \, \mathrm{d}x\right)^{\frac{1}{2}} + \frac{1}{2} h_K^{\frac{1}{2}} \left(\sum_{\text{faces}} \int_{\text{face}} \left( \left[ a \nabla u_h \cdot n \right] \right)^2 \, \mathrm{d}s\right)^{\frac{1}{2}},
+\eta_K = h_K \left(\int_K \left( f + \nabla \cdot (a \nabla u_h) \right)^2 \, \mathrm{d}x\right)^{\frac{1}{2}} + \frac{1}{2} h_K^{\frac{1}{2}} \left(\sum_{\text{faces}} \int_{\text{face}} \left( \left[\!\left[ a \nabla u_h \cdot \mathbf{n} \right]\!\right] \right)^2 \, \mathrm{d}s\right)^{\frac{1}{2}},
 $$
 
 and compare the results. As an alternative, properly combine the residual-based error estimator defined above with the output coming from the Kelly estimator.
