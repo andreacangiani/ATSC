@@ -23,7 +23,7 @@ _class: titlepage
 
 Given that the exact solution is known in the case of `step-12`, your goal is to confirm the order of convergence for this program. In the current case, we can not expect to get a particularly high order of convergence, even if we used higher order elements. As a matter of fact, for hyperbolic equations, theoretical predictions often indicate that the best one can hope for is an order one half below the interpolation estimate. For example, for the streamline diffusion method (an alternative method to the DG method used here to stabilize the solution of the transport equation), one can prove that for elements of degree $p$, the order of convergence is $p+\frac{1}{2}$ on arbitrary meshes.
 
-This should be relatively simple to verify, for example using the `VectorTools::integrate_difference` function.
+Modify `step-12` to verify the convergence order (for example using the `VectorTools::integrate_difference` function) upon successive uniform refinement steps. Print to the console the $L^2$ and $H^1$ errors and the estimated convergence rate at every refinement step.
 
 ---
 
