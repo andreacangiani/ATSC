@@ -33,6 +33,6 @@ $$
 \end{aligned}
 \right.
 $$
-where $\mathbf{\sigma}(\mathbf{u}) = C : \varepsilon (\mathbf{u})$ and $\mathbf{g} = [10, 10]^T$.
+where $\mathbf{\sigma}(\mathbf{u}) = C : \varepsilon (\mathbf{u})$ and $\mathbf{g} = [10, -100]^T$.
 
 These conditions model a plate fixed on its left side, free stress conditions on the top and bottom sides, and a normal traction force on its right side.
