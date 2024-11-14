@@ -22,5 +22,9 @@ _class: titlepage
 # Assignment
 
 - Read the documentation of `step-26`.
-- Modify `step-26` so to disable local refinement and to utilize explicit Runge-Kutta methods (among the ones available in deal.II) for time integration. Use `step-52` as a reference, specifically examining its `explicit_method`.
-- Using the method of manufactured solutions, design an exact solution that satisfies the equations in `step-26`. Compute and visualize the $L^2$ and $H^1$ error w.r.to the exact solution at the final timestep for different types of time discretizations.
+
+Choose one of the following assignments:
+1. Modify `step-26` so to disable local refinement and to utilize explicit Runge-Kutta methods (among the ones available in deal.II) for time integration. Use `step-52` as a reference, specifically examining its `explicit_method`.
+2. Parallelize `step-26` using `step-40` as a reference.
+
+In either case, using the method of manufactured solutions, design an exact solution that satisfies the equations in `step-26`. Compute and visualize the $L^2$ and $H^1$ error w.r.to the exact solution at the final timestep for different types of time discretizations (e.g. different values of $\theta$).
