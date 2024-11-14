@@ -48,7 +48,7 @@ private:
 };
 
 void
-assemble_system()
+HeatEquation::assemble_system()
 {
   // Assemble system matrix (=-S)
   // Assemble mass matrix (=M)
@@ -57,7 +57,7 @@ assemble_system()
 }
 
 Vector<double>
-evaluate_diffusion(const double time, const Vector<double> &y)
+HeatEquation::evaluate_diffusion(const double time, const Vector<double> &y)
 {
   Vector<double> tmp(n_dofs);
   tmp = 0;
@@ -71,7 +71,7 @@ evaluate_diffusion(const double time, const Vector<double> &y)
 }
 
 void
-run()
+HeatEquation::run()
 {
   const double time_step =
     (final_time - initial_time) / static_cast<double>(n_time_steps);
