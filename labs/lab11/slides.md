@@ -22,3 +22,6 @@ _class: titlepage
 # Assignment
 
 Read the documentation of `step-22` and `step-55`.
+
+1. Starting from `step-22`, follow the instructions in the *Block Schur complement preconditioner* section.
+2. Starting from `step-55`, play with the smoothers, smoothing steps, and other properties for the Trilinos AMG to achieve an optimal preconditioner.
